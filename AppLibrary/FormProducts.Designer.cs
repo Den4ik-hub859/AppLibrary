@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProducts));
+            flowLayoutPanelProducts = new FlowLayoutPanel();
+            SuspendLayout();
+            // 
+            // flowLayoutPanelProducts
+            // 
+            flowLayoutPanelProducts.Dock = DockStyle.Fill;
+            flowLayoutPanelProducts.Location = new Point(0, 0);
+            flowLayoutPanelProducts.Margin = new Padding(3, 4, 3, 4);
+            flowLayoutPanelProducts.Name = "flowLayoutPanelProducts";
+            flowLayoutPanelProducts.Size = new Size(834, 561);
+            flowLayoutPanelProducts.TabIndex = 1;
+            // 
+            // FormProducts
+            // 
+            AutoScaleDimensions = new SizeF(8F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Text = "Form1";
+            ClientSize = new Size(834, 561);
+            Controls.Add(flowLayoutPanelProducts);
+            Font = new Font("Calibri", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FormProducts";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Список книг";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private FlowLayoutPanel flowLayoutPanelProducts;
     }
 }
